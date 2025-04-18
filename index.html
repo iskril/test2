@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Video SVG</title>
+</head>
+<body>
+    <svg id="s1" width="100%" height="100%" viewBox="0 0 1920 600">
+        <!-- Маска (белая область = видимая часть) -->
+        <text x="20" y="120" font-size="150" fill="white" font-weight="600">
+            We're here
+        </text>
+        <text x="1390" y="120" font-size="150" fill="white" font-weight="600">
+            to make
+        </text>
+        <text x="20" y="270" font-size="150" fill="white" font-weight="600">
+            healthy
+        </text>
+        <text x="880" y="270" font-size="150" fill="white" font-weight="600">
+            living effortless,
+        </text>
+        <text x="20" y="440" font-size="150" fill="white" font-weight="600">
+            so you can
+        </text>
+        <text x="1230" y="440" font-size="150" fill="white" font-weight="600">
+            live longer
+        </text>
+        <text x="20" y="590" font-size="150" fill="white" font-weight="600">
+            and happier
+        </text>
+        <defs>
+            <mask id="video-mask">
+                <rect x="740" y="50" width="640" height="80" fill="white" />
+                <rect x="515" y="190" width="350" height="80" fill="white" />
+                <rect x="700" y="370" width="510" height="80" fill="white" />
+                <rect x="820" y="520" width="1080" height="80" fill="white" />
+            </mask>
+        </defs>
+
+        <foreignObject width="100%" height="100%" mask="url(#video-mask)">
+            <video autoplay loop muted playsinline style="width: 100%; height: 100%; object-fit: cover;">
+                <source src="video.mp4" type="video/mp4">
+            </video>
+        </foreignObject>
+    </svg>
+    <svg id="s2" width="100%" height="100%" viewBox="0 0 833 700">
+        <!-- Маска (белая область = видимая часть) -->
+        <text x="20" y="90" font-size="110" fill="white" font-weight="600">
+            We're here
+        </text>
+        <text x="20" y="200" font-size="110" fill="white" font-weight="600">
+            to
+        </text>
+        <text x="570" y="200" font-size="110" fill="white" font-weight="600">
+            make
+        </text>
+        <text x="185" y="320" font-size="110" fill="white" font-weight="600">
+            healthy living 
+        </text>
+        <text x="20" y="440" font-size="110" fill="white" font-weight="600">
+            effortless, so you
+        </text>
+        <text x="20" y="560" font-size="110" fill="white" font-weight="600">
+            can
+        </text>
+        <text x="320" y="560" font-size="110" fill="white" font-weight="600">
+            live longer
+        </text>
+        <text x="20" y="680" font-size="110" fill="white" font-weight="600">
+            and happier
+        </text>
+        <defs>
+            <mask id="video-mask2">
+                <rect x="540" y="40" width="280" height="55" fill="white" />
+                <rect x="120" y="150" width="440" height="55" fill="white" />
+                <rect x="20" y="270" width="155" height="55" fill="white" />
+                <rect x="200" y="510" width="110" height="55" fill="white" />
+                <rect x="600" y="630" width="220" height="55" fill="white" />
+            </mask>
+        </defs>
+
+        <foreignObject width="100%" height="100%" mask="url(#video-mask2)">
+            <video autoplay loop muted playsinline style="width: 100%; height: 100%; object-fit: cover;">
+                <source src="video.mp4" type="video/mp4">
+            </video>
+        </foreignObject>
+    </svg>
+</body>
+</html>
